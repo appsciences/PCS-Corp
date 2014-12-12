@@ -120,7 +120,7 @@ jQuery(document).ready(function ($) {
       transition: 'cubeV',
       fallback3d: 'sliceV',
       autoPlay: true,
-      delay: 5000,
+      delay: 10000,
       transitionDuration: 800,
       captionWidth: 100
     });
@@ -129,7 +129,7 @@ jQuery(document).ready(function ($) {
       controls: 'arrows',
       transition: 'fade',
       autoPlay: true,
-      delay: 5000,
+      delay: 10000,
       transitionDuration: 800,
       captionWidth: 100
     });
