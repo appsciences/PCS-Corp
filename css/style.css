@@ -87,7 +87,7 @@
 body {
   background: url('../img/bg_brushed_alu.png');
   background: url('../img/bg_gradient.png') repeat-x, url('../img/bg_brushed_alu.png'), #cccccc;
-  color: #666666;
+  color: #717275;
   font-size: 12px;
   padding: 20px 0 30px;
 }
@@ -488,7 +488,7 @@ i.black.big {
 }
 .theme_button {
   display: inline-block;
-  background-color: #1d57a8;
+  background-color: #22A049;
   background-image: url('../img/brushed_alu_button.png');
   background-image: url('../img/brushed_alu_button.png'), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3e80dd), to(#1d57a8));
   background-image: url('../img/brushed_alu_button.png'), -webkit-linear-gradient(top, #3e80dd, #1d57a8);

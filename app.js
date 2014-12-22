@@ -32,4 +32,9 @@ angular.module('csp-corp', [
                 redirectTo:'/home'
             });
     }]
-);
+).
+    controller('mainCtrl', ['$scope', '$location', function ($scope, $location, $window) {
+
+        $scope.$location = $location;
+
+    }]);

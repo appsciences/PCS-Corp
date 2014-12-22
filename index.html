@@ -46,7 +46,7 @@
 <body><!-- Add class="fluid" for fluid layout -->
 
   <!-- Main container -->
-  <div class="container">
+  <div class="container" ng-controller="mainCtrl">
 
     <!-- Top links -->
     <nav class="header_links"></nav>
@@ -54,10 +54,9 @@
     <!-- Header -->
     <div class="box">
       <header class="row clearfix">
-
-        <h1>
-          <a href="index.html">Patient Concierge</a>
-        </h1>
+        <p style = "margin-bottom: 0px">
+          <img src="img/PCS_Logo.png" style="width:400px;height: 68px;margin-bottom: 0px">
+        </p>
 
         <div class="widget_area">
           <a href="#" class="small theme_button"> Join Our Network</a>
@@ -66,7 +65,7 @@
         <nav class="desktop">
           <ul>
             <li>
-              <a href="index.html" class="selected">Home</a>
+              <a href="#/home">Home</a>
             </li>
             <li>
               <a href="#/appt">Book Appointment</a>
@@ -98,6 +97,49 @@
     <!-- Mobile navigation -->
     <nav class="mobile box"></nav>
 
+    <!-- for some very strange reason this only works in index.html, could not include it-->
+      <div class="slider box" ng-show="$location.path().indexOf('home')>-1">
+      <!-- Slides -->
+      <ul class="photo_slider rs-slider">
+
+        <li>
+          <img src="placeholders/1010x400/1.jpg" alt="">
+          <div class="rs-caption">
+        <span class="rs-arrows">
+          <a href="#" class="rs-prev"><i class="icon-chevron-left"></i></a><a href="#" class="rs-next"><i class="icon-chevron-right"></i></a>
+        </span>
+            <p>Patient Concierge Services helps YOU receive the best possible healthcare by bridging the
+              gap between your primary care physician and specialists.</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="placeholders/1010x400/2.jpg" alt="">
+          <div class="rs-caption">
+        <span class="rs-arrows">
+          <a href="#" class="rs-prev"><i class="icon-chevron-left"></i></a><a href="#" class="rs-next"><i class="icon-chevron-right"></i></a>
+        </span>
+            <p>Within minutes you can find the right specialist convenient to your location and schedule,
+              that accepts your insurance. You can also make the appointment right here and be on your
+              way to getting well sooner.</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="placeholders/1010x400/3.jpg" alt="">
+          <div class="rs-caption">
+        <span class="rs-arrows">
+          <a href="#" class="rs-prev"><i class="icon-chevron-left"></i></a><a href="#" class="rs-next"><i class="icon-chevron-right"></i></a>
+        </span>
+            <p>PCS offers access to our comprehensive network of Physicians to help you find the best
+              specialist. Follow the easy appointment process to get started.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+
     <ng-view></ng-view>
 
     <div class="clearfix"></div>
@@ -112,8 +154,7 @@
         <!-- Copyright -->
         <div class="copyright">
           <div class="row">
-          
-            <p>© 2014 Patient Concierge, LLC</p>
+            <p>© 2014 Patient Concierge Services, Inc</p>
 
             <nav>
               <ul>
